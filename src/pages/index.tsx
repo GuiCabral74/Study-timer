@@ -1,10 +1,10 @@
-import Btn from "@/components/Button";
-import Homee from "@/components/Button";
+import Form from "@/components/Form/Form";
+import ListCourses from "@/components/List/ListCourses";
 export default function Home() {
   return (
       <div>
-          <Btn/>
-          <Homee/>
+          <Form />
+          <ListCourses />
       </div>
   )
 }
