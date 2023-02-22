@@ -1,3 +1,4 @@
+import style from './list.module.scss';
 export default function ListCourses () {
 
 const courses = [
@@ -11,18 +12,18 @@ const courses = [
     }];
 
     return (
-        <>
+        <aside className={style.listaTarefas}>
             <h2>Estudos do dia:</h2>
             <ul>
                 {courses.map((e, index) => {
                     return (
-                        <li key={index}>
+                        <li key={index} className={style.item}>
                             <h3>{e.course}</h3>
                             <span>{e.time}</span>
                         </li>
                     )
                 })}
             </ul>
-        </>
+        </aside>
     )
 }

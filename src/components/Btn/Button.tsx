@@ -1,7 +1,9 @@
+import style from './button.module.scss';
+
 export default function Btn (){
     return(
         <>
-            <button>Enviar</button>
+            <button className={style.botao}>Botão</button>
         </>
     )
 }
